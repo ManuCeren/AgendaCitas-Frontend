@@ -51,7 +51,7 @@ export default function Telefonos() {
         id_paciente: nuevoTelefono.id_paciente,
         codigo_pais: `+${nuevoTelefono.codigo_pais}`,
         numero: nuevoTelefono.numero,
-        numero_telefono: numeroCompleto, // este es el que realmente se guarda
+        numero_telefono: numeroCompleto, 
       };
 
       console.log('Payload:', payload);

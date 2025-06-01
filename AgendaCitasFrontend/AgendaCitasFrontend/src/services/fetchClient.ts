@@ -10,7 +10,7 @@ export async function fetchClient<T>(
     const response = await fetch(`${BASE_URL}${endpoint}`, {
       // -------- OPCIONES POR DEFECTO ----------
       method: 'GET',
-      credentials: 'include',              // ← envía cookies/credenciales (útil si usas JWT-cookie)
+      credentials: 'include',              
       cache: 'no-store',
       headers: {
         'Content-Type': 'application/json',
@@ -21,7 +21,7 @@ export async function fetchClient<T>(
 
     // ---------- MANEJO DE ERRORES ------------
     if (!response.ok) {
-      const text = await response.text();           // mensaje del backend
+      const text = await response.text();          
       throw new Error(
         `Error ${response.status}: ${response.statusText}\n${text}`
       );

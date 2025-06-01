@@ -172,7 +172,7 @@ export default function Notificaciones() {
               </thead>
               <tbody>
                 {paginatedNotificaciones.map((n) => (
-                  <tr key={n.id_notificacion}>
+                   <tr key={n.id_notificacion}>
                     <td>{n.id_notificacion}</td>
                     <td>{n.id_cita}</td>
                     <td>

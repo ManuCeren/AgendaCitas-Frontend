@@ -37,7 +37,7 @@ export default function PacientesLista() {
     setPacienteActual(paciente);
     setNuevoPaciente({
       nombre: paciente.nombre,
-      fecha_nacimiento: paciente.fecha_nacimiento?.slice(0, 10), // YYYY-MM-DD
+      fecha_nacimiento: paciente.fecha_nacimiento?.slice(0, 10), 
       email: paciente.email,
     });
     setShowModal(true);

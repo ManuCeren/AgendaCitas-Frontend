@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useContext, type JSX } from 'react';
 import { AuthContext } from '../context/AuthContext';
-import Login from '../page/auth/Login';      // Asegúrate de la mayúscula si el archivo lo tiene
+import Login from '../page/auth/Login';      
 import Dashboard from '../page/main/Dashboard';
 import Pacientes from '../page/main/Pacientes';
 import Citas from '../page/main/Citas';
