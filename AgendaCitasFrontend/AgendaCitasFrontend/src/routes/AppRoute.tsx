@@ -6,6 +6,7 @@ import Dashboard from '../page/main/Dashboard';
 import Pacientes from '../page/main/Pacientes';
 import Citas from '../page/main/Citas';
 import Telefonos from '../page/main/Telefonos';
+import Notificaciones from '../page/main/Notificaciones';
 
 
 function PrivateRoute({ children }: { children: JSX.Element }) {
@@ -28,6 +29,7 @@ export default function AppRoute() {
             <Route path="/pacientes" element={<Pacientes />} />
             <Route path="/citas" element={<Citas />} />
             <Route path="/telefonos" element={<Telefonos/>}></Route>
+            <Route path="/notificaciones" element={<Notificaciones/>}></Route>
             <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
     );
